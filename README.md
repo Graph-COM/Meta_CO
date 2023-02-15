@@ -27,3 +27,84 @@ gurobipy                9.5.1
 ```
 
 ## The Max Clique (MC)
+
+### STEP 1: data Preparation
+
+#### 1. 1 TWITTER
+for twitter dataset, go to /max_clique/twitter/dataset/configs/config.yaml
+
+enter the path to the folder that you would like to save the PyG form dataset in this yaml file, an example of the config.yaml file is shown as follows:
+```
+train:
+    target_path: /...[your path].../meta_CO/max_clique/twitter/dataset/trainset
+    data_dir: /...[your path].../meta_CO/max_clique/twitter/dataset/trainset
+
+val:
+    target_path: /...[your path].../meta_CO/max_clique/twitter/dataset/valset
+    data_dir: /...[your path].../meta_CO/max_clique/twitter/dataset/valset
+
+test:
+    target_path: /...[your path].../meta_CO/max_clique/twitter/dataset/testset
+    data_dir: /...[your path].../meta_CO/max_clique/twitter/dataset/testset
+```
+
+split and transform the original twitter dataset (which is shuffled and saved in /max_clique/twitter/dataset/raw_dataset), go to /max_clique/twitter/dataset and run:
+
+```
+python twitter_test.py
+python twitter_train.py
+python twitter_val.py
+```
+
+#### 1. 2 RB200/500
+for RB dataset, the data generation is adopted from [the github repository of RUN-CSP](https://github.com/RUNCSP/RUN-CSP/blob/master/generate_xu_instances.py).
+
+here we use RB200 as an example:
+go to /max_clique/rb200/dataset/configs/config.yaml
+
+enter the path to the folder that you would like to save the PyG form dataset in this yaml file, an example of the config.yaml file is shown as follows:
+```
+train:
+    target_path: /...[your path].../meta_CO/max_clique/rb200/dataset/trainset
+    data_dir: /...[your path].../meta_CO/max_clique/rb200/dataset/trainset
+
+val:
+    target_path: /...[your path].../meta_CO/max_clique/rb200/dataset/valset
+    data_dir: /...[your path].../meta_CO/max_clique/rb200/dataset/valset
+
+test:
+    target_path: /...[your path].../meta_CO/max_clique/rb200/dataset/testset
+    data_dir: /...[your path].../meta_CO/max_clique/rb200/dataset/testset
+```
+
+go to /max_clique/rb200/dataset to generate the training,val / testing data:
+
+```
+sh rb200_test.sh
+sh rb200_train.sh
+sh rb200_val.sh
+```
+
+### STEP2: training
+go to /max_clique/[dataset] folder, edit the maml.sh doc as you may want to, fill in the GPU number in utils.py (it should align with the gpu number in maml.sh) you are going to use, then run
+```
+sh maml.sh
+```
+
+To tun the [Erdos goes neural (EGN)](https://github.com/Stalence/erdos_neu) baseline, run
+```
+sh erdos.sh
+```
+### STEP3: testing
+go to /max_clique/[dataset] folder, open test.py, fill in the path to the model that you would like to test, then edit test.sh file, run
+```
+sh test.sh
+```
+
+### STEP4: fine-tuning
+go to /max_clique/[dataset] folder, open finetune.py, fill in the path to the model that you would like to fine-tune, then edit finetune.sh file, run
+```
+sh finetune.sh
+```
+
+
