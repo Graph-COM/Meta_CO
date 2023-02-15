@@ -100,6 +100,7 @@ go to /max_clique/[dataset] folder, open test.py, fill in the path to the model 
 ```
 sh test.sh
 ```
+for the problems, we provide our pre-trained model, in /max_clique/[dataset]/train_files/maml(erdos)/demo/best_model.pth, which could be used to directly solve the problems.
 
 ### STEP4: fine-tuning
 go to /max_clique/[dataset] folder, open finetune.py, fill in the path to the model that you would like to fine-tune, then edit finetune.sh file, run
@@ -182,6 +183,7 @@ go to /vertex_cover/[dataset] folder, open test.py, fill in the path to the mode
 ```
 sh test.sh
 ```
+for the problems, we provide our pre-trained model, in /vertex_cover/[dataset]/train_files/erdos(maml)/demo/best_model.pth, which could be used to directly solve the problems.
 
 ### STEP4: fine-tuning
 go to /vertex_cover/[dataset] folder, open finetune.py, fill in the path to the model that you would like to fine-tune, then edit finetune.sh file, run
