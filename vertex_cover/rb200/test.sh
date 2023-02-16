@@ -1,0 +1,1 @@
+nohup python -u test.py --gpu 6 > ./test_maml_demo.log  2>&1 </dev/null &

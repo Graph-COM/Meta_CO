@@ -1,0 +1,1 @@
+nohup python -u finetune.py --gpu 6 > ./maml_8_1_demo.log  2>&1 </dev/null &

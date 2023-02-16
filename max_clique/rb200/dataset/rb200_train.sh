@@ -1,0 +1,1 @@
+nohup python -u rb200_train.py > ./generate_train.log  2>&1 </dev/null &

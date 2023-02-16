@@ -1,0 +1,1 @@
+nohup python -u train_maml.py --save_dir ./train_files/maml/maml_outer1e3_inner5e5_step1_mb96_penalty05_ascent05 --inner_lr 5e-5 --outer_lr 1e-3 --n_steps 1 --meta_steps 1000  --use_gpu 1 --task_mb_size 96 --seed 123 > ./maml_outer1e3_inner5e5_step1_mb96_penalty05_ascent05.log  2>&1 </dev/null &

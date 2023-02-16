@@ -1,0 +1,1 @@
+nohup python -u train_erdos.py --gpu 1 --save_path ./train_files/erdos/try_batch96/ > ./try_batch96.log 2>&1 </dev/null &

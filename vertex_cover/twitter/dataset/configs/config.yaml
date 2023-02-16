@@ -1,0 +1,11 @@
+train:
+    target_path: /yourpath/vertex_cover/twitter/dataset/trainset
+    data_dir: /yourpath/vertex_cover/twitter/dataset/trainset
+
+val:
+    target_path: /yourpath/vertex_cover/twitter/dataset/valset
+    data_dir: /yourpath/vertex_cover/twitter/dataset/valset
+
+test:
+    target_path: /yourpath/vertex_cover/twitter/dataset/testset
+    data_dir: /yourpath/vertex_cover/twitter/dataset/testset

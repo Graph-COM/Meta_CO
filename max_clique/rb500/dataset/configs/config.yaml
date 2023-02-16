@@ -1,0 +1,11 @@
+train:
+    target_path: /yourpath/max_clique/rb500/dataset/trainset
+    data_dir: /yourpath/max_clique/rb500/dataset/trainset
+
+val:
+    target_path: /yourpath/max_clique/rb500/dataset/valset
+    data_dir: /yourpath/max_clique/rb500/dataset/valset
+
+test:
+    target_path: /yourpath/max_clique/rb500/dataset/testset
+    data_dir: /yourpath/max_clique/rb500/dataset/testset

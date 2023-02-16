@@ -1,0 +1,1 @@
+nohup python -u rb200hard_test.py > ./generate_test.log  2>&1 </dev/null &
