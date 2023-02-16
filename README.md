@@ -31,6 +31,7 @@ gurobipy                9.5.1
 ### STEP 1: data Preparation
 
 #### 1. 1 TWITTER
+
 for twitter dataset, go to /max_clique/twitter/dataset/configs/config.yaml
 
 enter the path to the folder that you would like to save the PyG form dataset in this yaml file, an example of the config.yaml file is shown as follows:
@@ -48,7 +49,7 @@ test:
     data_dir: /...[your path].../meta_CO/max_clique/twitter/dataset/testset
 ```
 
-split and transform the original twitter dataset (which is shuffled and saved in /max_clique/twitter/dataset/raw_dataset), go to /max_clique/twitter/dataset and run:
+split and transform the original twitter dataset (which is shuffled and saved in /max_clique/twitter/dataset/raw_dataset, it needs unzip first), go to /max_clique/twitter/dataset and run:
 
 ```
 python twitter_test.py
@@ -131,7 +132,7 @@ test:
     data_dir: /...[your path].../meta_CO/vertex_cover/twitter/dataset/testset
 ```
 
-split and transform the original twitter dataset (which is shuffled and saved in /vertex_cover/twitter/dataset/raw_dataset), go to /vertex_cover/twitter/dataset and run:
+split and transform the original twitter dataset (which is shuffled and saved in /vertex_cover/twitter/dataset/raw_dataset, it needs unzip first), go to /vertex_cover/twitter/dataset and run:
 
 ```
 python twitter_test.py
