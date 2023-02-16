@@ -192,4 +192,5 @@ go to /vertex_cover/[dataset] folder, open finetune.py, fill in the path to the 
 sh finetune.sh
 ```
 
-
+## The Max Independent Set (MIS)
+Code is coming soon
