@@ -1,5 +1,5 @@
 # Meta_CO
-The official repository of the paper `unsupervised learning for combinatorial optimization needs meta learning' Haoyu Wang, Pan Li.
+The official repository of the paper [`unsupervised learning for combinatorial optimization needs meta learning' Haoyu Wang, Pan Li](https://arxiv.org/abs/2301.03116).
 
 The repository contains the code and datasets contained in the max clique (MC), the minimum vertex covering (MVC), the max independent set (MIS) problems.
 
@@ -194,3 +194,15 @@ sh finetune.sh
 
 ## The Max Independent Set (MIS)
 Code is coming soon
+
+
+
+If you find our paper or repo useful, please cite our paper:
+```
+@article{wang2023unsupervised,
+  title={Unsupervised Learning for Combinatorial Optimization Needs Meta-Learning},
+  author={Wang, Haoyu and Li, Pan},
+  journal={International Conference on Learning Representations},
+  year={2023}
+}
+```
